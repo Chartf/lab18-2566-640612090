@@ -32,7 +32,7 @@ export const GET = async (request) => {
     //Check role here. If user is "ADMIN" show all of the enrollments instead
     return NextResponse.json({
       ok: true,
-      enrollments: null, //replace null with enrollment data!
+      enrollments: DB.enrollments, //replace null with enrollment data!
     });
 
   const courseNoList = [];
